@@ -1,5 +1,4 @@
 ﻿using System;
-using DatabaseCRUD_EF.Models;
 
 namespace DatabaseCRUD_EF
 {
