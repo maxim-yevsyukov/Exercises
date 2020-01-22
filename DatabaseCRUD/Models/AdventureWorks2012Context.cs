@@ -50,11 +50,7 @@ namespace DatabaseCRUD_EF.Models
                     .IsUnicode(false);
             });
 
-           
-
-            OnModelCreatingPartial(modelBuilder);
         }
 
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
