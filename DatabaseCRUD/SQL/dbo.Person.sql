@@ -1,0 +1,24 @@
+﻿USE [AdventureWorks2012]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Person](
+	[PersonId] [int] IDENTITY(1,1) NOT NULL,
+	[NameFirst] [varchar](50) NOT NULL,
+	[NameLast] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Person] PRIMARY KEY CLUSTERED 
+(
+	[PersonId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+--PersonId	NameFirst	NameLast
+--1			John		Doe
+--2			John		Smith
